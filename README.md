@@ -2,12 +2,12 @@
 <h1 align="center">
   Back to Front 2020
 </h1>
-<p align="center">
-  Built with Gatsby
+<div align="center">
+  <p>Built with Gatsby</p>
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
   </a>
-</p>
+</div>
 
 ## 🚀 Quick start
 
