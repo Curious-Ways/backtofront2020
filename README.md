@@ -2,10 +2,8 @@
 <h1 align="center">
   Back to Front 2020
 </h1>
-<h2 align="center">
-  Built with Gatsby
-</h2>
 <p align="center">
+  Built with Gatsby
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
   </a>
