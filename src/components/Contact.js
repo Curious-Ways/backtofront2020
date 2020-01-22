@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const ContactWrapper = styled.div`
 
 `
-const City = styled.p`
+const City = styled.h3`
 
 `
 const Timezone = styled.p`
