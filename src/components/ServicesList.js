@@ -4,12 +4,12 @@ import styled from 'styled-components'
 const ListWrapper = styled.ul`
 `
 
-const ServicesList = children => (
-
+const ServicesList = ({ list }) => (
   <ListWrapper>
-    { children }
+    {list.map(item => (
+      <li key={item}>{item}</li>
+    ))}
   </ListWrapper>
-
-)
+);
 
 export default ServicesList
