@@ -10,10 +10,13 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { createGlobalStyle } from "styled-components"
 import Header from "./header"
-import "./layout.css"
+// import "./layout.css"
+import "../fonts/fonts.css"
 
 const GlobalStyle = createGlobalStyle`
-
+  body {
+    font-family: AribauGrotesk-Rg, sans-serif;
+  }
 `
 
 const Layout = ({ children }) => {

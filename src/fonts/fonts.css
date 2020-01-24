@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'AribauGrotesk-Bd';
+  src: url('3AE4DE_0_0.eot');
+  src: url('3AE4DE_0_0.eot?#iefix') format('embedded-opentype'),
+  url('3AE4DE_0_0.woff2') format('woff2'),
+  url('3AE4DE_0_0.woff') format('woff'),
+  url('3AE4DE_0_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'AribauGrotesk-Rg';
+  src: url('3AE4DE_1_0.eot');
+  src: url('3AE4DE_1_0.eot?#iefix') format('embedded-opentype'),
+  url('3AE4DE_1_0.woff2') format('woff2'),
+  url('3AE4DE_1_0.woff') format('woff'),
+  url('3AE4DE_1_0.ttf') format('truetype');
+}
+   
