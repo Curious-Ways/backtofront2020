@@ -9,9 +9,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { createGlobalStyle } from "styled-components"
-import SiteHeader from "./Header"
+import styled from "styled-components"
+import SiteHeader from "./SiteHeader"
+import SiteFooter from "./SiteFooter"
 import "../fonts/fonts.css"
-import styled from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -50,16 +51,12 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <> 
       <GlobalStyle />
       <Site>
         <SiteHeader siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        <SiteFooter />
       </Site>
     </>
   )
