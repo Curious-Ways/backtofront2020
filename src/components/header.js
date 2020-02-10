@@ -16,7 +16,6 @@ const NavItemsWrap = styled.ul`
   margin: 0;
   display: flex;
   
-
   li {
     list-style: none;
     padding: 0 10px;

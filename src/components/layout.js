@@ -23,7 +23,12 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }  
+  }
+
+  a:link, a:visited {
+    text-decoration: none;
+    border-bottom: 1px solid red;
+  }
 `
 const Site = styled.div`
   margin-left: auto;
