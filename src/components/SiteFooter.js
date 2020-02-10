@@ -6,6 +6,7 @@ const FooterWrapper = styled.footer`
   display: flex;
   justify-content: space-between;
   align-items: flex-end;  
+  padding: 60px 0;
 `
 const Legal = styled.small`
   max-width: 250px;
@@ -17,12 +18,12 @@ const ContactsGroup = styled.div`
   div {
     margin-right: 35px;
   }
- 
 `
 
 const SiteFooter = props => ( 
 
   <FooterWrapper>
+  
     <ContactsGroup>
       <Contact 
         city="London"
