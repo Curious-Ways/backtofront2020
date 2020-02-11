@@ -36,6 +36,7 @@ const RelationshipsPage = ( { data } ) => (
     <ProjectsWrap>
       <Card
         text="We partnered with a New York mortgage disruptor to go from prodcut idea to market within ten weeks"
+        link="projects/zenden"
         >
         <Img
           fluid={data.imgZenden.childImageSharp.fluid}
@@ -44,6 +45,7 @@ const RelationshipsPage = ( { data } ) => (
       </Card>
       <Card
         text="We made a smoked salmon company leap from garden shed hobby to the shelves of Harrods, Selfridges &amp; Waitrose"
+        link="projects/pished-fish"
         >
         <Img
           fluid={data.imgPishedfish.childImageSharp.fluid}
@@ -52,6 +54,7 @@ const RelationshipsPage = ( { data } ) => (
       </Card>
       <Card
         text="We renamed, branded and launched an online accountancy firm in only eight weeks."
+        link="projects/addition"
         >
         <Img
           fluid={data.imgAddition.childImageSharp.fluid}
@@ -60,6 +63,7 @@ const RelationshipsPage = ( { data } ) => (
       </Card>
       <Card
         text="We re-launched Notion’s digitial offerings. Helping to double their online readership in less than a year"
+        link="projects/notion"
         >
         <Img
           fluid={data.imgNotion.childImageSharp.fluid}

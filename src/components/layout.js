@@ -25,15 +25,15 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-
+  img {
+    display: block;
+  }
   a:link, a:visited {
     text-decoration: none;
     border-bottom: 1px solid red;
   }
-
   p {
     margin-top: 0;
-
       &:last-child {
         margin-bottom: 0
     }
