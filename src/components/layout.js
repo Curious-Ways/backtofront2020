@@ -30,6 +30,14 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     border-bottom: 1px solid red;
   }
+
+  p {
+    margin-top: 0;
+
+      &:last-child {
+        margin-bottom: 0
+    }
+  }
 `
 const Site = styled.div`
   margin-left: auto;

@@ -1,13 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components'
 
 const Heading = props => {
+  
   const { Tag, text, className } = props;
-
+  
+  const HeadingType = styled(Tag)`
+    margin-top: 0;
+  `
+  
   return (
-    <Tag className={className}>
+    <HeadingType className={className}>
       {text}
-    </Tag>
+    </HeadingType>
   );
 }
 
