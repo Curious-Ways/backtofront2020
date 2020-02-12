@@ -19,15 +19,31 @@ const GlobalStyle = createGlobalStyle`
     font-family: AribauGrotesk-Rg, sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-  }
-
-  html {
     background-blend-mode: color-burn;
     background-size: cover;
     background-repeat: no-repeat;
+    background-image: linear-gradient(180deg, #302AB8 0%, #2AAAB2 100%);
 
-    &.page-about {
-      background-image: linear-gradient(180deg, #302AB8 11%, #FF8725 100%);      
+    &.project-addition {
+      background-image: linear-gradient(180deg, #302AB8 11%, #00DCA1 100%);
+    }
+    &.project-dog-ear {
+      background-image: linear-gradient(180deg, #302AB8 12%, #242424 82%);
+    }
+    &.project-notion {
+      background-image: linear-gradient(180deg, #302AB8 11%, #000000 100%);
+    }
+    &.project-pished-fish {
+      background-image: linear-gradient(180deg, #302AB8 11%, #FF8725 100%);
+    }
+    &.project-rosetta {
+      background-image: linear-gradient(180deg, #302AB8 11%, #C80E5C 100%);
+    }
+    &.project-van {
+      background-image: linear-gradient(180deg, #302AB8 12%, #0E2C1F 82%);
+    }
+    &.project-zenden {
+      background-image: linear-gradient(180deg, #302AB8 11%, #7361F5 100%);
     }
   }
 
