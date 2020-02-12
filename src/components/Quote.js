@@ -2,7 +2,7 @@ import React from "react"
 import styled from 'styled-components'
 
 const QuoteWrapper = styled.blockquote`
-
+  margin: 0;
 `
 const QuoteSource = styled.cite`
   display: block;

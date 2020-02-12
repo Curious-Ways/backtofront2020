@@ -9,6 +9,7 @@ import styled from 'styled-components'
 import Heading from "../components/Heading"
 import Helmet from 'react-helmet'
 
+
 const ProjectsGroup = styled.div`
   display: grid;
   grid-template-columns: 100%;
@@ -18,17 +19,13 @@ const ProjectsGroupTitle = styled(Heading)`
   padding-top: 20px;
 `
 
-
 const IndexPage = (  { data } ) => (
-
 
   <Layout>
 
     <Helmet htmlAttributes={{class: 'page-home'}}/>
 
     <SEO title="Home" />
-
-
 
     <ContentBlockAnimated
 
@@ -79,8 +76,6 @@ const IndexPage = (  { data } ) => (
         />
       </CardWide>
     </ProjectsGroup>
-
-
 
   </Layout>
 )

@@ -15,16 +15,21 @@ const PaginationItem = styled.li`
   }
   a:hover, a:active, a:focus {
   }
+
+  span {
+    display: inline-block;
+    font-family: -apple-system,BlinkMacSystemFont;
+  }
 `
 
 const Pagination = props => (
 
   <PaginationWrap>
     <PaginationItem>
-      <Link to={props.linkBefore}>Before</Link>
+      <Link to={props.linkBefore}><span>&larr;</span> Before</Link>
     </PaginationItem>
     <PaginationItem>
-      <Link to={props.linkMore}>More</Link>
+      <Link to={props.linkMore}>More <span>&rarr;</span></Link>
     </PaginationItem>
   </PaginationWrap>
 

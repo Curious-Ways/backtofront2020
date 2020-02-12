@@ -18,6 +18,7 @@ const FooterWrapper = styled.footer`
 const Legal = styled.small`
   max-width: 250px;
   text-align: right;
+  font-size: 14px;
 `
 const ContactsGroup = styled.div` 
   display: flex;

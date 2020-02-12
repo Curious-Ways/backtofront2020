@@ -7,6 +7,8 @@ const Heading = props => {
   const { Tag, text, className } = props;
   
   const HeadingType = styled(Tag)`
+    font-family: AribauGrotesk-Bd, sans-serif;
+    font-size: 22px;
     margin-top: 0;
   `
   

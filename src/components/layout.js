@@ -13,6 +13,7 @@ import styled from "styled-components"
 import SiteHeader from "./SiteHeader"
 import SiteFooter from "./SiteFooter"
 import "../fonts/fonts.css"
+import background_pattern from '../images/background_pattern.jpg'
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -47,10 +48,18 @@ const GlobalStyle = createGlobalStyle`
     }
   }
   body {
+    .page-home & {
+      background-image: url(${background_pattern});
+      background-repeat: repeat-x;
+      background-position: 0 600px;
+    }
+
     color: #fff;
     min-height: 100vh;
+    height: 100%;
     margin: 0;
     font-size: 22px;
+    position: relative;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -71,6 +80,9 @@ const GlobalStyle = createGlobalStyle`
       &:last-child {
         margin-bottom: 0
     }
+  }
+  h1, h2, h3, h4 {
+    font-weight: normal;
   }
 `
 const Site = styled.div`

@@ -5,7 +5,8 @@ const ContactWrapper = styled.div`
 
 `
 const City = styled.h3`
-  margin: 0;
+  font-family: AribauGrotesk-Bd, sans-serif;
+  margin: 0 0 10px;
 `
 const Timezone = styled.p`
   margin: 0;
