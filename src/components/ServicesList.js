@@ -6,7 +6,7 @@ const ListWrapper = styled.ul`
   margin-bottom: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 25% auto;
+  grid-template-columns: 40% auto;
   grid-gap: 2px 10px;
 `
 

@@ -46,8 +46,8 @@ const SiteHeader = ({ siteTitle }) => (
 
     <nav>
       <NavItemsWrap>
-        <li><Link activeStyle={{ color: "red" }} to="/about/">About</Link></li>
-        <li><Link activeStyle={{ color: "red" }} to="/relationships/">Relationships</Link></li>
+        <li><Link activeStyle={{ color: "#1DD5E1" }} to="/about/">About</Link></li>
+        <li><Link activeStyle={{ color: "#1DD5E1" }} to="/relationships/">Relationships</Link></li>
         <li><a href="tel:+4407870583147">Call us</a></li>
         <li><a href="mailto:hello@backtofront.co">Email us</a></li>
       </NavItemsWrap>

@@ -12,7 +12,7 @@ const FooterWrapper = styled.footer`
     color: #fff;
   }
   a:hover, a:active, a:focus {
-    color: #371dc0;
+
   }  
 `
 const Legal = styled.small`

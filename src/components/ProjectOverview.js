@@ -4,6 +4,15 @@ import styled from 'styled-components'
 
 const ContentWrapper = styled.div`
   margin-bottom: 60px;
+
+  a:link, a:visited {
+    color: #fff;
+    padding-bottom: 1px;
+    border-bottom: 2px solid #1DD5E1;   
+  }
+  a:hover, a:active, a:focus {
+    color: #1DD5E1;
+  }  
 `
 
 const ProjectOverview = props => (

@@ -10,7 +10,11 @@ const PaginationWrap = styled.ul`
   list-style: none;
 `
 const PaginationItem = styled.li`
-
+  a:link, a:visited {
+    color: #fff;
+  }
+  a:hover, a:active, a:focus {
+  }
 `
 
 const Pagination = props => (
