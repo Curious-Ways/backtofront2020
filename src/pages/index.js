@@ -7,6 +7,7 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image" 
 import styled from 'styled-components'
 import Heading from "../components/Heading"
+import Helmet from 'react-helmet'
 
 const ProjectsGroup = styled.div`
   display: grid;
@@ -15,12 +16,19 @@ const ProjectsGroup = styled.div`
 `
 const ProjectsGroupTitle = styled(Heading)`
   padding-top: 20px;
-`;
+`
+
 
 const IndexPage = (  { data } ) => (
+
+
   <Layout>
-    
+
+    <Helmet htmlAttributes={{class: 'page-home'}}/>
+
     <SEO title="Home" />
+
+
 
     <ContentBlockAnimated
 
@@ -71,6 +79,8 @@ const IndexPage = (  { data } ) => (
         />
       </CardWide>
     </ProjectsGroup>
+
+
 
   </Layout>
 )

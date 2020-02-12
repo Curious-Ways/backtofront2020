@@ -20,7 +20,19 @@ const GlobalStyle = createGlobalStyle`
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
   }
+
+  html {
+    background-blend-mode: color-burn;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &.page-about {
+      background-image: linear-gradient(180deg, #302AB8 11%, #FF8725 100%);      
+    }
+  }
+
   body {
+    min-height: 100vh;
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

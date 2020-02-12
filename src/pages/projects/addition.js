@@ -9,12 +9,15 @@ import ProjectText from "../../components/ProjectText"
 import ServicesList from "../../components/ServicesList"
 import Quote from "../../components/Quote"
 import Pagination from "../../components/Pagination"
+import Helmet from 'react-helmet'
 
 const servicesItems = ['Art Direction', 'Branding', 'Brand Strategy', 'Illustration', 'Print Design', 'Social Media', 'Website Build', 'Website Design'];
 
 const ProjectAddition = ( { data } ) => (
 
   <Layout>
+
+    <Helmet htmlAttributes={{class: 'project-addition'}}/>
 
     <SEO title="Addition" />
 

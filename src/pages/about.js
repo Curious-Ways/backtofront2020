@@ -7,6 +7,7 @@ import styled from 'styled-components'
 import Card from "../components/Card"
 import { graphql } from "gatsby" 
 import Img from "gatsby-image" 
+import Helmet from 'react-helmet'
 
 const ProjectsWrap = styled.div`
   display: grid;
@@ -16,6 +17,9 @@ const ProjectsWrap = styled.div`
 
 const AboutPage = ( { data } ) => (
   <Layout>
+
+    <Helmet htmlAttributes={{class: 'page-about'}}/>
+
     <SEO title="Some ongoing relationships" />
 
     <Heading
