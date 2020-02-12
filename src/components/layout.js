@@ -59,6 +59,7 @@ const GlobalStyle = createGlobalStyle`
   }
   a:link, a:visited {
     text-decoration: none;
+    transition: 0.5s all;
     /*padding-bottom: 1px;
     border-bottom: 2px solid #1DD5E1; */
   }

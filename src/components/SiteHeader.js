@@ -13,7 +13,6 @@ const Header = styled.header`
     color: #fff;
     padding-bottom: 1px;
     border-bottom: 2px solid #1DD5E1;
-    transition: 0.5s all;
   }
   a:hover, a:active, a:focus {
     color: #1DD5E1;

@@ -7,6 +7,13 @@ const FooterWrapper = styled.footer`
   justify-content: space-between;
   align-items: flex-end;  
   padding: 60px 0;
+
+  a:link, a:visited {
+    color: #fff;
+  }
+  a:hover, a:active, a:focus {
+    color: #371dc0;
+  }  
 `
 const Legal = styled.small`
   max-width: 250px;
@@ -27,14 +34,12 @@ const SiteFooter = props => (
     <ContactsGroup>
       <Contact 
         city="London"
-        timezone=""
         email_address="david@backtofront.co"
         phone="+44 7870 583 147"
       />
 
       <Contact 
         city="New York"
-        timezone=''
         email_address="pete@backtofront.co"
         phone="+1 347 863 3183"
       />
