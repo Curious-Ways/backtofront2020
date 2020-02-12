@@ -17,7 +17,7 @@ const ProjectOverview = props => (
 
     <p>{props.text}</p>
 
-    <a target="_blank" href={props.linkURL}>{props.linkName}</a>
+    <a rel="noopener noreferrer" target="_blank" href={props.linkURL}>{props.linkName}</a>
 
     {props.children}
 
