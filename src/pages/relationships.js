@@ -10,9 +10,14 @@ import Img from "gatsby-image"
 import Helmet from 'react-helmet'
 
 const ProjectsWrap = styled.div`
+  
   display: grid;
-  grid-template-columns: repeat(2, 50%);
   grid-gap: 10px;
+  grid-template-columns: 100%;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 50%);
+  }
 `
 
 const RelationshipsPage = ( { data } ) => (
@@ -22,12 +27,13 @@ const RelationshipsPage = ( { data } ) => (
 
     <SEO title="Some ongoing relationships" />
 
-    <Heading
-      text="Some ongoing relationships"
-      Tag="h1"
-    />
-
     <ContentBlock>
+
+      <Heading
+        text="Some ongoing relationships"
+        Tag="h1"
+      />
+
       <p>If you think we could help you, we would love to talk to you. Please call or send us an email.</p>
       <p>The kettle is always on...</p>
     </ContentBlock>

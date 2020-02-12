@@ -2,8 +2,20 @@ import React from "react"
 import styled from 'styled-components'
 
 const ImagesWrapper = styled.div`
-  div:not(:last-child) {
+
+  @media screen and (max-width: 767px) {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+
+  div {
     margin-bottom: 10px;
+
+    &:last-child {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 40px;
+      }
+    }
   }
 `
 

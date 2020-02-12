@@ -3,6 +3,10 @@ import styled from 'styled-components'
 
 const QuoteWrapper = styled.blockquote`
   margin: 0;
+  
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+  }  
 `
 const QuoteSource = styled.cite`
   display: block;
@@ -13,14 +17,16 @@ const QuoteSource = styled.cite`
 const QuoteText = styled.p`
   position: relative;
 
-  &:before {
-    color: #1DD5E1;
-    content: "“";
-    position: absolute;
-    left: -35px;
-    top: -7px;
-    font-size: 65px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  @media screen and (min-width: 768px) {
+    &:before {
+      color: #1DD5E1;
+      content: "“";
+      position: absolute;
+      left: -35px;
+      top: -7px;
+      font-size: 65px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
   }
 `
 

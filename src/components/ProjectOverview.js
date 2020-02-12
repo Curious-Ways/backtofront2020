@@ -5,6 +5,10 @@ import styled from 'styled-components'
 const ContentWrapper = styled.div`
   margin-bottom: 60px;
 
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+  }
+
   a:link, a:visited {
     color: #fff;
     padding-bottom: 1px;

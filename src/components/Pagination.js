@@ -8,6 +8,10 @@ const PaginationWrap = styled.ul`
   margin: 50px 0 0;
   padding: 0;
   list-style: none;
+
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+  }  
 `
 const PaginationItem = styled.li`
   a:link, a:visited {

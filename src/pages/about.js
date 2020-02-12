@@ -3,17 +3,9 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Heading from "../components/Heading"
 import ContentBlock from "../components/ContentBlock"
-import styled from 'styled-components'
-import Card from "../components/Card"
 import { graphql } from "gatsby" 
-import Img from "gatsby-image" 
-import Helmet from 'react-helmet'
 
-const ProjectsWrap = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  grid-gap: 10px;
-`
+import Helmet from 'react-helmet'
 
 const AboutPage = ( { data } ) => (
   <Layout>
@@ -22,12 +14,13 @@ const AboutPage = ( { data } ) => (
 
     <SEO title="Some ongoing relationships" />
 
-    <Heading
-      text="About us"
-      Tag="h1"
-    />
-
     <ContentBlock>
+    
+      <Heading
+        text="About us"
+        Tag="h1"
+      />
+
       <p>If you think we could help you, we would love to talk to you. Please call or send us an email.</p>
       <p>The kettle is always on...</p>
     </ContentBlock>

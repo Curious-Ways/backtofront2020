@@ -10,8 +10,11 @@ import ServicesList from "../../components/ServicesList"
 import Quote from "../../components/Quote"
 import Pagination from "../../components/Pagination"
 import Helmet from 'react-helmet'
+import MediaQuery from 'react-responsive'
 
 const servicesItems = ['Art Direction', 'Branding', 'Brand Strategy', 'Illustration', 'Print Design', 'Social Media', 'Website Build', 'Website Design'];
+const quoteSource = ['Art'];
+const quoteText = ['yo'];
 
 const ProjectRosetta = ( { data } ) => (
 
@@ -34,10 +37,12 @@ const ProjectRosetta = ( { data } ) => (
 
       </ProjectOverview>
 
-      <Quote
-        source="Sanaz Amidi, CEO, Rosetta Arts"
-        text="B2F really took to the challenge of rebranding a visual arts organization where they needed to satisfy a panel of artists and designers. B2F were committed to the process and this was demonstrated in the bold and dynamic final outcomes- we couldn't be happier with the work produced and are continuing to work with them."
-      />
+      <MediaQuery minDeviceWidth={768}>
+        <Quote
+          source={quoteSource}
+          text={quoteText}
+        />
+      </MediaQuery>
 
     </ProjectText>
 
@@ -55,7 +60,14 @@ const ProjectRosetta = ( { data } ) => (
         alt="Rosetta"
       />
     </ProjectGallery>
-   
+
+    <MediaQuery maxDeviceWidth={767}>
+      <Quote
+        source={quoteSource}
+        text={quoteText}
+      />
+    </MediaQuery>
+       
     <Pagination
       linkBefore="/projects/zenden"
       linkMore="/projects/notion"
