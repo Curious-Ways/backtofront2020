@@ -4,7 +4,6 @@ import animation from '../images/logo_animation.gif'
 import video from '../images/logo_animation.mp4'
 
 const ContentWrapper = styled.div`
-  border: 1px solid orange;
   /* background-image: url(${animation});
   background-repeat: no-repeat;
   background-position: 100% 50%; */
@@ -30,7 +29,7 @@ const ContentBlockAnimated = props => (
     <ContentWrapper>
 
       <VideoLoop>
-        <video autoplay="autoplay" loop controls muted width="450px">
+        <video autoplay="autoplay" muted width="450px">
           <source type="video/mp4" src={video} />
         </video>
       </VideoLoop>
