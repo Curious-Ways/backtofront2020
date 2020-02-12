@@ -22,8 +22,8 @@ const GlobalStyle = createGlobalStyle`
     background-blend-mode: color-burn;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: linear-gradient(180deg, #302AB8 0%, #2AAAB2 100%);
-
+    background-image: linear-gradient(180deg, #302AB8 0%, #302AB8 25%, #2AAAB2 100%);
+    
     &.project-addition {
       background-image: linear-gradient(180deg, #302AB8 11%, #00DCA1 100%);
     }
@@ -46,10 +46,11 @@ const GlobalStyle = createGlobalStyle`
       background-image: linear-gradient(180deg, #302AB8 11%, #7361F5 100%);
     }
   }
-
   body {
+    color: #fff;
     min-height: 100vh;
     margin: 0;
+    font-size: 22px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -58,7 +59,11 @@ const GlobalStyle = createGlobalStyle`
   }
   a:link, a:visited {
     text-decoration: none;
-    border-bottom: 1px solid red;
+    /*padding-bottom: 1px;
+    border-bottom: 2px solid #1DD5E1; */
+  }
+  a:hover, a:active, a:focus {
+    /*color: #1DD5E1;*/ 
   }
   p {
     margin-top: 0;
