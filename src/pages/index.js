@@ -9,7 +9,6 @@ import styled from 'styled-components'
 import Heading from "../components/Heading"
 import Helmet from 'react-helmet'
 
-
 const ProjectsGroup = styled.div`
   display: grid;
   grid-template-columns: 100%;
