@@ -12,7 +12,11 @@ export const GlobalStyles = createGlobalStyle`
     background-blend-mode: color-burn;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: linear-gradient(180deg, #302AB8 0%, #302AB8 25%, #2AAAB2 100%);
+    background-image: linear-gradient(180deg, #302AB8 0%, #302AB8 50%, #2AAAB2 100%);
+
+    @media screen and (min-width: 768px) {
+      background-image: linear-gradient(180deg, #302AB8 0%, #302AB8 35%, #2AAAB2 100%);
+    }
     
     &.project-addition {
       background-image: linear-gradient(180deg, #302AB8 11%, #00DCA1 100%);
@@ -37,11 +41,11 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
   body {
-    .page-home & {
+    /*.page-home & {
       background-image: url(${background_pattern});
       background-repeat: repeat-x;
       background-position: 0 600px;
-    }
+    }*/
     color: #fff;
     min-height: 100vh;
     height: 100%;
