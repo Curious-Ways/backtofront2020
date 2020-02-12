@@ -1,14 +1,20 @@
+import React, { useState } from 'react';
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
 import styled from 'styled-components'
+import MediaQuery from 'react-responsive'
+import Burger from './burger';
+import Menu from './menu';
 
 const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 100px 0 70px;
+  padding: 40px 0 30px;  
 
+  @media screen and (min-width: 768px){
+    padding: 100px 0 70px;  
+  }
+  
   a:link, a:visited {
     color: #fff;
     padding-bottom: 1px;
@@ -35,33 +41,44 @@ const NavItemsWrap = styled.ul`
   }
 `
 
-const SiteHeader = ({ siteTitle }) => (
-  <Header>
+function SiteHeader() {
+  const [open, setOpen] = useState(false);
+  return (
 
-    <Logo>
-      <Link to="/">
-        {siteTitle}
-      </Link>
-    </Logo>
+    <Header>
 
-    <nav>
-      <NavItemsWrap>
-        <li><Link activeStyle={{ color: "#1DD5E1" }} to="/about/">About</Link></li>
-        <li><Link activeStyle={{ color: "#1DD5E1" }} to="/relationships/">Relationships</Link></li>
-        <li><a href="tel:+4407870583147">Call us</a></li>
-        <li><a href="mailto:hello@backtofront.co">Email us</a></li>
-      </NavItemsWrap>
-    </nav>
+      <MediaQuery maxDeviceWidth={767}>
+        <Logo>
+          <Link to="/">
+            B2F
+          </Link>
+        </Logo>
+        <div>
+          <Burger open={open} setOpen={setOpen} />
+          <Menu open={open} setOpen={setOpen} />
+        </div>  
+      </MediaQuery>
 
-  </Header>
-)
+      <MediaQuery minDeviceWidth={768}>
+        <Logo>
+          <Link to="/">
+            Back to Front
+          </Link>
+        </Logo>
+        <nav>
+          <NavItemsWrap>
+            <li><Link activeStyle={{ color: "#1DD5E1" }} to="/about/">About</Link></li>
+            <li><Link activeStyle={{ color: "#1DD5E1" }} to="/relationships/">Relationships</Link></li>
+            <li><a href="tel:+4407870583147">Call us</a></li>
+            <li><a href="mailto:hello@backtofront.co">Email us</a></li>
+          </NavItemsWrap>
+        </nav>
+      </MediaQuery>
+      
+    </Header>
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+  );
 }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default SiteHeader

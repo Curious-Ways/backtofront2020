@@ -6,7 +6,7 @@ const CardWrapper = styled.div`
   position: relative;
 
   a:link, a:hover {
-    color: #302AB8;
+    color: ${({ theme }) => theme.colorPurple};
   }
 `
 const CardTextWrap = styled.div`
