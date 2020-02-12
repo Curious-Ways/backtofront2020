@@ -3,9 +3,11 @@ import styled from 'styled-components'
 import Contact from "./Contact"
 
 const FooterWrapper = styled.footer`
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;  
+  @media screen and (min-width: 850px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;  
+  }
   padding: 60px 0;
 
   a:link, a:visited {
@@ -16,15 +18,26 @@ const FooterWrapper = styled.footer`
   }  
 `
 const Legal = styled.small`
-  max-width: 250px;
-  text-align: right;
+  display: block;
   font-size: 14px;
+  max-width: 250px;
+
+  @media screen and (min-width: 850px) {
+    text-align: right;
+  }
 `
 const ContactsGroup = styled.div` 
-  display: flex;
 
   div {
-    margin-right: 35px;
+    margin: 0 0 30px;
+  }
+
+  @media screen and (min-width: 850px) {
+    display: flex;
+
+    div {
+      margin: 0 35px 0 0; 
+    }
   }
 `
 
@@ -47,7 +60,7 @@ const SiteFooter = props => (
     </ContactsGroup>
 
     <Legal>
-      © {new Date().getFullYear()} Back to Front London Limited Company Number 10026593<br />Registered in England and Wales      
+      © {new Date().getFullYear()} Back to Front London Limited Company Number 10026593. Registered in England and Wales
     </Legal>
 
   </FooterWrapper>
