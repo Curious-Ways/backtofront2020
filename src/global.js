@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import background_pattern from './images/background_pattern.jpg'
+import background_pattern_small from './images/background_pattern_small.jpg'
 
 export const GlobalStyles = createGlobalStyle`
   *, *::after, *::before {
@@ -41,11 +42,16 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
   body {
-    /*.page-home & {
-      background-image: url(${background_pattern});
+    .page-home & {
       background-repeat: repeat-x;
-      background-position: 0 600px;
-    }*/
+      background-position: 0 400px;
+      background-image: url(${background_pattern_small});
+
+      @media screen and (min-width: 1000px) {
+        background-position: 0 600px;
+        background-image: url(${background_pattern});
+      }
+    }
     color: #fff;
     min-height: 100vh;
     height: 100%;

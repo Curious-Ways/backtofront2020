@@ -1,8 +1,17 @@
 import React from "react"
-import styled from 'styled-components'
+import styled, { keyframes }  from 'styled-components'
 import animation from '../images/logo_animation.gif'
 import video from '../images/logo_animation.mp4'
 import MediaQuery from 'react-responsive'
+
+const fadeIn = keyframes`
+  from { 
+    opacity: 0; 
+  }
+  to { 
+    opacity: 1; 
+  }
+`
 
 const ContentWrapper = styled.div`
   /* background-image: url(${animation});
@@ -39,6 +48,9 @@ const VideoLoop = styled.div`
     right: 0;
     top: 0;
     transform: none;
+    /* @keyframes duration | timing-function | delay | iteration-count | direction | fill-mode | play-state | name */
+    animation: 0.5s ease-in 1.2s forwards ${fadeIn};
+    opacity: 0;
   }
 `
 

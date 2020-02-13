@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import Heading from "../components/Heading"
 import ContentBlock from "../components/ContentBlock"
@@ -21,8 +21,7 @@ const AboutPage = ( { data } ) => (
         Tag="h1"
       />
 
-      <p>If you think we could help you, we would love to talk to you. Please call or send us an email.</p>
-      <p>The kettle is always on...</p>
+      <p>Vivamus efficitur tortor velit, at ultrices enim blandit sit amet. Ut ac mattis magna, vel sollicitudin augue. Proin sit amet finibus risus. Praesent pretium condimentum pretium. Proin maximus, quam in pretium cursus, turpis arcu mattis neque, at hendrerit justo sapien at turpis. Donec ultrices eu sem nec suscipit. Sed vel luctus mi. Suspendisse libero nisl, vulputate id vehicula et, interdum vel magna.</p>
     </ContentBlock>
 
   </Layout>
