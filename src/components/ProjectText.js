@@ -9,7 +9,7 @@ const ContentWrapper = styled.div`
 
   @media screen and (min-width: 768px) {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
   }
 `

@@ -24,8 +24,11 @@ const Legal = styled.small`
   font-size: 14px;
   max-width: 250px;
 
+
   @media screen and (min-width: 850px) {
     text-align: right;
+    top: -8px;
+    position: relative;
   }
 `
 const ContactsGroup = styled.div` 
@@ -35,10 +38,12 @@ const ContactsGroup = styled.div`
   }
 
   @media screen and (min-width: 850px) {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
 
     div {
-      margin: 0 35px 0 0; 
+      margin: 0 0 0 0; 
     }
   }
 `

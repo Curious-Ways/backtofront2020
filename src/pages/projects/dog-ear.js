@@ -12,9 +12,9 @@ import Pagination from "../../components/Pagination"
 import Helmet from 'react-helmet'
 import MediaQuery from 'react-responsive'
 
-const servicesItems = ['Art Direction', 'Branding', 'Brand Strategy', 'Illustration', 'Print Design', 'Social Media', 'Website Build', 'Website Design'];
-const quoteSource = ['Art'];
-const quoteText = ['yo'];
+const servicesItems = ['Art Direction', 'Branding', 'Brand Strategy', 'Print Design', 'Website Build', 'Website Design'];
+const quoteSource = ['It\'s Nice That'];
+const quoteText = ['This micro-mag folds out into a readable page and folds up into a nifty bookmark. It’s a brilliantly innovative format (that takes its name from the unsightly habbit of folding page corners) and makes good use of a very small space.'];
 
 const ProjectDogEar = ( { data } ) => (
 
@@ -22,22 +22,22 @@ const ProjectDogEar = ( { data } ) => (
     
     <Helmet htmlAttributes={{class: 'project-dog-ear'}}/>
 
-    <SEO title="Dog Ear" />
+    <SEO title="Dog Ear Magazine" />
 
     <ProjectText>
 
       <ProjectOverview
         title="Dog Ear"
-        text="We renamed, branded and launched an online accountancy firm in only eight weeks."
-        linkName="rosettaarts.org"
-        linkURL="https://rosettaarts.org"
+        text="A magazine that’s also a bookmark that grew from a side-project to a company backed by Margaret Atwood."
+        linkName="dogearmagazine.com"
+        linkURL="https://dogearmagazine.com"
         >
 
         <ServicesList list={servicesItems} />
 
       </ProjectOverview>
 
-      <MediaQuery minDeviceWidth={768}>
+      <MediaQuery minWidth={768}>
         <Quote
           source={quoteSource}
           text={quoteText}
@@ -69,7 +69,7 @@ const ProjectDogEar = ( { data } ) => (
       />            
     </ProjectGallery>
 
-    <MediaQuery maxDeviceWidth={767}>
+    <MediaQuery maxWidth={767}>
       <Quote
         source={quoteSource}
         text={quoteText}

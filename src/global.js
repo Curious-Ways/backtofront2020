@@ -48,7 +48,7 @@ export const GlobalStyles = createGlobalStyle`
       background-image: url(${background_pattern_small});
 
       @media screen and (min-width: 1000px) {
-        background-position: 0 600px;
+        background-position: 0 700px;
         background-image: url(${background_pattern});
       }
     }

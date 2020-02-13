@@ -58,7 +58,7 @@ const ContentBlockAnimated = props => (
 
     <ContentWrapper>
 
-      <MediaQuery maxDeviceWidth={449}>
+      <MediaQuery maxWidth={449}>
         <VideoLoop>
           <video autoplay="autoplay" muted width="350px">
             <source type="video/mp4" src={video} />
@@ -66,7 +66,7 @@ const ContentBlockAnimated = props => (
         </VideoLoop>
       </MediaQuery>
 
-      <MediaQuery minDeviceWidth={450}>
+      <MediaQuery minWidth={450}>
         <VideoLoop>
           <video autoplay="autoplay" muted width="450px">
             <source type="video/mp4" src={video} />

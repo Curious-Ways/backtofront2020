@@ -13,8 +13,8 @@ import Helmet from 'react-helmet'
 import MediaQuery from 'react-responsive'
 
 const servicesItems = ['Art Direction', 'Branding', 'Brand Strategy', 'Illustration', 'Print Design', 'Social Media', 'Website Build', 'Website Design'];
-const quoteSource = ['Art'];
-const quoteText = ['yo'];
+const quoteSource = ['QUOTE SOURCE NEEDED'];
+const quoteText = ['Maecenas pulvinlvinarit vel dignissim pulvinar. Vivamus ut fermentum nulla, sit amet pharetra felis. Praesent imperdiet id odio nec euismod. Maecenas pulvinlvinarit vel dignissim pulvinar. Vivamus ut fermentum nulla, sit amet pharetra felis. Praesent imperdiet id odio nec euismod'];
 
 const ProjectAddition = ( { data } ) => (
 
@@ -37,7 +37,7 @@ const ProjectAddition = ( { data } ) => (
 
       </ProjectOverview>
 
-      <MediaQuery minDeviceWidth={768}>
+      <MediaQuery minWidth={768}>
         <Quote
           source={quoteSource}
           text={quoteText}
@@ -65,7 +65,7 @@ const ProjectAddition = ( { data } ) => (
       />
     </ProjectGallery>
 
-    <MediaQuery maxDeviceWidth={767}>
+    <MediaQuery maxWidth={767}>
       <Quote
         source={quoteSource}
         text={quoteText}

@@ -12,9 +12,10 @@ import Pagination from "../../components/Pagination"
 import Helmet from 'react-helmet'
 import MediaQuery from 'react-responsive'
 
-const servicesItems = ['Art Direction', 'Branding', 'Brand Strategy', 'Illustration', 'Print Design', 'Social Media', 'Website Build', 'Website Design'];
-const quoteSource = ['Art'];
-const quoteText = ['yo'];
+const servicesItems = ['Art Direction', 'Branding', 'Print Design', 'Website Build', 'Website Design'];
+const quoteSource = ['Sanaz Amidi, CEO, Rosetta Arts'];
+const quoteText = ['B2F really took to the challenge of rebranding a visual arts organization where they needed to satisfy a panel of artists and designers. B2F were committed to the process and this was demonstrated in the bold and dynamic final outcomes- we couldn\'t be happier with the work produced and are continuing to work with them.'];
+
 
 const ProjectRosetta = ( { data } ) => (
 
@@ -28,7 +29,7 @@ const ProjectRosetta = ( { data } ) => (
 
       <ProjectOverview
         title="Rosetta"
-        text="We renamed, branded and launched an online accountancy firm in only eight weeks."
+        text="We earned the trust to do Rosetta’s first rebrand after 25 years."
         linkName="rosettaarts.org"
         linkURL="https://rosettaarts.org"
         >
@@ -37,7 +38,7 @@ const ProjectRosetta = ( { data } ) => (
 
       </ProjectOverview>
 
-      <MediaQuery minDeviceWidth={768}>
+      <MediaQuery minWidth={768}>
         <Quote
           source={quoteSource}
           text={quoteText}
@@ -61,7 +62,7 @@ const ProjectRosetta = ( { data } ) => (
       />
     </ProjectGallery>
 
-    <MediaQuery maxDeviceWidth={767}>
+    <MediaQuery maxWidth={767}>
       <Quote
         source={quoteSource}
         text={quoteText}

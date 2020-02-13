@@ -56,7 +56,7 @@ function SiteHeader() {
 
     <Header>
 
-      <MediaQuery maxDeviceWidth={767}>
+      <MediaQuery maxWidth={767}>
         <Logo>
           <Link to="/">
             B2F
@@ -68,7 +68,7 @@ function SiteHeader() {
         </div>  
       </MediaQuery>
 
-      <MediaQuery minDeviceWidth={768}>
+      <MediaQuery minWidth={768}>
         <Logo>
           <Link to="/">
             Back to Front

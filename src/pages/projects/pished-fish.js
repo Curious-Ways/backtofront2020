@@ -13,8 +13,8 @@ import Helmet from 'react-helmet'
 import MediaQuery from 'react-responsive'
 
 const servicesItems = ['Art Direction', 'Branding', 'Brand Strategy', 'Illustration', 'Print Design', 'Social Media', 'Website Build', 'Website Design'];
-const quoteSource = ['Art'];
-const quoteText = ['yo'];
+const quoteSource = ['James Eagle, MD, Pished Fish'];
+const quoteText = ['From initial consultation to completion (and beyond), they’ve shown creative flair, adapting well with product and company changes. This wouldn’t have been achievable with a traditional agency.'];
 
 const ProjectPishedFish = ( { data } ) => (
 
@@ -28,7 +28,7 @@ const ProjectPishedFish = ( { data } ) => (
 
       <ProjectOverview
         title="Pished Fish"
-        text="We renamed, branded and launched an online accountancy firm in only eight weeks."
+        text="We partnered to turn a garden shed hobby into a company that now graces the shelves of Harrods, Selfridges & Waitrose."
         linkName="thepishedfish.com"
         linkURL="https://www.thepishedfish.com/"
         >
@@ -37,7 +37,7 @@ const ProjectPishedFish = ( { data } ) => (
 
       </ProjectOverview>
 
-      <MediaQuery minDeviceWidth={768}>
+      <MediaQuery minWidth={768}>
         <Quote
           source={quoteSource}
           text={quoteText}
@@ -65,7 +65,7 @@ const ProjectPishedFish = ( { data } ) => (
       />
     </ProjectGallery>
 
-    <MediaQuery maxDeviceWidth={767}>
+    <MediaQuery maxWidth={767}>
       <Quote
         source={quoteSource}
         text={quoteText}

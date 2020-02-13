@@ -13,8 +13,9 @@ import Helmet from 'react-helmet'
 import MediaQuery from 'react-responsive'
 
 const servicesItems = ['Art Direction', 'Branding', 'Brand Strategy', 'Illustration', 'Print Design', 'Social Media', 'Website Build', 'Website Design'];
-const quoteSource = ['Art'];
-const quoteText = ['yo'];
+const quoteSource = ['QUOTE SOURCE NEEDED'];
+const quoteText = ['Maecenas pulvinlvinarit vel dignissim pulvinar. Vivamus ut fermentum nulla, sit amet pharetra felis. Praesent imperdiet id odio nec euismod. Maecenas pulvinlvinarit vel dignissim pulvinar. Vivamus ut fermentum nulla, sit amet pharetra felis. Praesent imperdiet id odio nec euismod'];
+
 
 const ProjectNotion = ( { data } ) => (
 
@@ -28,16 +29,18 @@ const ProjectNotion = ( { data } ) => (
 
       <ProjectOverview
         title="Notion"
-        text="We renamed, branded and launched an online accountancy firm in only eight weeks."
+        text="We re-launched Notion’s digitial offerings. Helping to double their online readership in less than a year."
         linkName="notion.online"
         linkURL="https://notion.online"
+        link2Name="studionotion.online"
+        link2URL="https://studionotion.online"
         >
 
         <ServicesList list={servicesItems} />
 
       </ProjectOverview>
 
-      <MediaQuery minDeviceWidth={768}>
+      <MediaQuery minWidth={768}>
         <Quote
           source={quoteSource}
           text={quoteText}
@@ -73,7 +76,7 @@ const ProjectNotion = ( { data } ) => (
       />            
     </ProjectGallery>
 
-    <MediaQuery maxDeviceWidth={767}>
+    <MediaQuery maxWidth={767}>
       <Quote
         source={quoteSource}
         text={quoteText}

@@ -14,11 +14,11 @@ const Timezone = styled.p`
   margin: 0;
 `
 const Email = styled.a`
-
+  display: inline-block;
 `
 const Phone = styled.a`
   margin: 0;
-  display: block;
+  display: inline-block;
 `
 
 const Contact = props => (
@@ -26,7 +26,7 @@ const Contact = props => (
   <ContactWrapper>
     <City>{props.city}</City>
     <Timezone>{props.timezone}</Timezone>
-    <Email href={props.email_address}>{props.email_address}</Email>
+    <Email href={props.email_address}>{props.email_address}</Email><br />
     <Phone href={props.phone}>{props.phone}</Phone>
   </ContactWrapper>
 

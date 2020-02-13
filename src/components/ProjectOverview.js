@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 const ContentWrapper = styled.div`
   margin-bottom: 60px;
+  max-width: 450px;
 
   @media screen and (max-width: 767px) {
     font-size: 18px;
@@ -18,6 +19,10 @@ const ContentWrapper = styled.div`
     color: #1DD5E1;
   }  
 `
+const StyledLink = styled.a`
+  display: inline-block;
+  margin-bottom: 5px;
+`
 
 const ProjectOverview = props => (
 
@@ -30,7 +35,9 @@ const ProjectOverview = props => (
 
     <p>{props.text}</p>
 
-    <a rel="noopener noreferrer" target="_blank" href={props.linkURL}>{props.linkName}</a>
+    <StyledLink rel="noopener noreferrer" target="_blank" href={props.linkURL}>{props.linkName}</StyledLink><br />
+
+    { props.link2Name && <StyledLink rel="noopener noreferrer" target="_blank" href={props.link2URL}>{props.link2Name}</StyledLink> }
 
     {props.children}
 

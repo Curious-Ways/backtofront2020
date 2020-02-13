@@ -12,9 +12,9 @@ import Pagination from "../../components/Pagination"
 import Helmet from 'react-helmet'
 import MediaQuery from 'react-responsive'
 
-const servicesItems = ['Art Direction', 'Branding', 'Brand Strategy', 'Illustration', 'Print Design', 'Social Media', 'Website Build', 'Website Design'];
-const quoteSource = ['Art'];
-const quoteText = ['yo'];
+const servicesItems = ['Art Direction', 'Branding', 'Brand Strategy', 'Print Design', 'Packaging Design', 'Photography', 'Website Build', 'Website Design'];
+const quoteSource = ['Tatiana Van Lancker, Founder, VAN'];
+const quoteText = ['B2F have been pivotal in helping me create a brand identity based on a complex dichotomy: elegant fine jewellery that is also fun and playful, classic and contemporary. They are also a joy to work with, always accommodating and helpful.'];
 
 const ProjectVan = ( { data } ) => (
 
@@ -28,16 +28,16 @@ const ProjectVan = ( { data } ) => (
 
       <ProjectOverview
         title="Van"
-        text="We renamed, branded and launched an online accountancy firm in only eight weeks."
-        linkName="rosettaarts.org"
-        linkURL="https://rosettaarts.org"
+        text="Fusce imperdiet odio faucibus ullamcorper tristique. Phasellus suscipit justo a feugiat aliquam."
+        linkName="van-robot.com"
+        linkURL="https://van-robot.org"
         >
 
         <ServicesList list={servicesItems} />
 
       </ProjectOverview>
 
-      <MediaQuery minDeviceWidth={768}>
+      <MediaQuery minWidth={768}>
         <Quote
           source={quoteSource}
           text={quoteText}
@@ -61,7 +61,7 @@ const ProjectVan = ( { data } ) => (
       />
     </ProjectGallery>
 
-    <MediaQuery maxDeviceWidth={767}>
+    <MediaQuery maxWidth={767}>
       <Quote
         source={quoteSource}
         text={quoteText}

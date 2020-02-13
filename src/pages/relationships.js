@@ -16,7 +16,7 @@ const ProjectsWrap = styled.div`
   grid-template-columns: 100%;
 
   @media screen and (min-width: 768px) {
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 1fr);
   }
 `
 
