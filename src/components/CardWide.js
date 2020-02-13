@@ -14,6 +14,9 @@ const CardWrapper = styled.div`
   }
 `
 const CardTextWrap = styled.div`
+
+
+
   @media screen and (min-width: 900px) {
     position: absolute;
     bottom: 15px;
@@ -38,6 +41,12 @@ const CardText = styled.p`
   }
 `
 const ImageWrap = styled.div`
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.005);
+  }
+
   @media screen and (max-width: 899px) {
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);

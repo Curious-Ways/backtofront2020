@@ -12,9 +12,11 @@ const FooterWrapper = styled.footer`
 
   a:link, a:visited {
     color: #fff;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 1px;
   }
   a:hover, a:active, a:focus {
-
+    border-bottom: 2px solid #fff;
   }  
 `
 const Legal = styled.small`

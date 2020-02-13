@@ -66,12 +66,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   a:link, a:visited {
     text-decoration: none;
-    transition: 0.5s all;
-    /*padding-bottom: 1px;
-    border-bottom: 2px solid #1DD5E1; */
-  }
-  a:hover, a:active, a:focus {
-    /*color: #1DD5E1;*/ 
+    transition: 0.3s color ease-in-out;
   }
   p {
     margin-top: 0;

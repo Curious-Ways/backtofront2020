@@ -16,8 +16,10 @@ const PaginationWrap = styled.ul`
 const PaginationItem = styled.li`
   a:link, a:visited {
     color: #fff;
+    padding-bottom: 1px;
   }
   a:hover, a:active, a:focus {
+    border-bottom: 2px solid #fff;
   }
 
   span {
