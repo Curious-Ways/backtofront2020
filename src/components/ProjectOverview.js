@@ -30,7 +30,7 @@ const ProjectOverview = props => (
 
     <Heading
       text={props.title}
-      Tag="h1"
+      tag="h1"
     />
 
     <p>{props.text}</p>

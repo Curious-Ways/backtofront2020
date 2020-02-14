@@ -10,7 +10,6 @@ import Img from "gatsby-image"
 import Helmet from 'react-helmet'
 
 const ProjectsWrap = styled.div`
-  
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 100%;
@@ -29,24 +28,24 @@ const RelationshipsPage = ( { data } ) => (
 
     <ContentBlock>
 
-      <Heading
+      <Heading 
+        tag="h1"
         text="Some ongoing relationships"
-        Tag="h1"
       />
 
       <p>If you think we could help you, we would love to talk to you. Please call or send us an email.</p>
       <p>The kettle is always on...</p>
     </ContentBlock>
 
-    <Heading
+    <Heading 
+      tag="h2"
       text="All the projects below are existing clients"
-      Tag="h2"
     />
 
     <ProjectsWrap>
       <Card
         text="We partnered with a New York mortgage disruptor to go from prodcut idea to market within ten weeks"
-        link="projects/zenden"
+        link="/projects/zenden"
         >
         <Img
           fluid={data.imgZenden.childImageSharp.fluid}
@@ -55,7 +54,7 @@ const RelationshipsPage = ( { data } ) => (
       </Card>
       <Card
         text="We made a smoked salmon company leap from garden shed hobby to the shelves of Harrods, Selfridges &amp; Waitrose"
-        link="projects/pished-fish"
+        link="/projects/pished-fish"
         >
         <Img
           fluid={data.imgPishedfish.childImageSharp.fluid}
@@ -64,7 +63,7 @@ const RelationshipsPage = ( { data } ) => (
       </Card>
       <Card
         text="We renamed, branded and launched an online accountancy firm in only eight weeks."
-        link="projects/addition"
+        link="/projects/addition"
         >
         <Img
           fluid={data.imgAddition.childImageSharp.fluid}
@@ -73,7 +72,7 @@ const RelationshipsPage = ( { data } ) => (
       </Card>
       <Card
         text="We re-launched Notion’s digitial offerings. Helping to double their online readership in less than a year"
-        link="projects/notion"
+        link="/projects/notion"
         >
         <Img
           fluid={data.imgNotion.childImageSharp.fluid}

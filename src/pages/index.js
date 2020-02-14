@@ -43,7 +43,7 @@ const IndexPage = (  { data } ) => (
 
     <ProjectsGroupTitle
       text="How our work works"
-      Tag="h1"
+      tag="h1"
     />
 
     <ProjectsGroup>

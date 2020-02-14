@@ -18,7 +18,7 @@ const AboutPage = ( { data } ) => (
     
       <Heading
         text="About us"
-        Tag="h1"
+        tag="h1"
       />
 
       <p>Vivamus efficitur tortor velit, at ultrices enim blandit sit amet. Ut ac mattis magna, vel sollicitudin augue. Proin sit amet finibus risus. Praesent pretium condimentum pretium. Proin maximus, quam in pretium cursus, turpis arcu mattis neque, at hendrerit justo sapien at turpis. Donec ultrices eu sem nec suscipit. Sed vel luctus mi. Suspendisse libero nisl, vulputate id vehicula et, interdum vel magna.</p>
