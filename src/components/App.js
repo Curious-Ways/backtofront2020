@@ -33,7 +33,7 @@ const Site = styled.div`
 `
 const Main = styled.main`
   /* @keyframes duration | timing-function | delay | iteration-count | direction | fill-mode | play-state | name */
-  animation: 0.75s ease-in 0.5s forwards ${fadeIn};
+  animation: 0.25s ease-in 0.5s forwards ${fadeIn};
   opacity: 0;
 `
 
