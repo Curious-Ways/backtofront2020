@@ -5,16 +5,7 @@ import MediaQuery from 'react-responsive'
 import Burger from './burger';
 import Menu from './menu';
 
-const fadeIn = keyframes`
-  from { 
-    opacity: 0; 
-  }
-  to { 
-    opacity: 1; 
-  }
-`
 const Header = styled.header`
-  /* animation: ${fadeIn} 2s; */
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
