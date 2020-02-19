@@ -26,9 +26,19 @@ const IndexPage = (  { data } ) => (
 
     <SEO title="Home" />
 
-    <ContentBlockAnimated
+    <ContentBlockAnimated>
+      
+      <Heading
+        text="We design brands and we build websites for brand-new businesses, or businesses trying something brand-new."
+        tag="h1"
+      />
 
-      description={[
+      <p>Our people are the very best at what they do, but our services are surprisingly affordable because of how we choose to work.</p>
+      <p>We love what we do and are proud of our long term relationships; we continue to partner with all of the clients shown here.</p>
+
+    </ContentBlockAnimated>
+
+      {/* description={[
         {
           text:'We design brands and we build websites for brand-new businesses, or businesses trying something brand-new.',
         },
@@ -38,8 +48,7 @@ const IndexPage = (  { data } ) => (
         {
           text:'We love what we do and are proud of our long term relationships; we continue to partner with all of the clients shown here.',
         },
-      ]}
-    />
+      ]} */}
 
     <ProjectsGroupTitle
       text="How our work works"

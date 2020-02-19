@@ -75,11 +75,12 @@ const ContentBlockAnimated = props => (
       </MediaQuery>
 
       <Content>
-        {props.description.map((el, i) => {
+        {/* {props.description.map((el, i) => {
           return (
             <p key={`contentBlockText__${i}`}>{el.text}</p>
           )
-        })}
+        })} */}
+        {props.children}
       </Content>
 
     </ContentWrapper>

@@ -13,8 +13,8 @@ import Helmet from 'react-helmet'
 import MediaQuery from 'react-responsive'
 
 const servicesItems = ['Art Direction', 'Branding', 'Brand Strategy', 'Illustration', 'Print Design', 'Social Media', 'Website Build', 'Website Design'];
-const quoteSource = ['QUOTE SOURCE NEEDED'];
-const quoteText = ['Maecenas pulvinlvinarit vel dignissim pulvinar. Vivamus ut fermentum nulla, sit amet pharetra felis. Praesent imperdiet id odio nec euismod. Maecenas pulvinlvinarit vel dignissim pulvinar. Vivamus ut fermentum nulla, sit amet pharetra felis. Praesent imperdiet id odio nec euismod'];
+const quoteSource = ['Ron Davidson, CEO, Zenden'];
+const quoteText = ['B2F took what was a business idea with a relatively complex product behind it, and turned it into a beautiful and easy to understand branded solution with all the supporting physical and digital marketing materials. Their commitment to the success of the endeavor and to the quality of the output under tight timelines was remarkable.'];
 
 const ProjectZenden = ( { data } ) => (
 

@@ -13,8 +13,8 @@ import Helmet from 'react-helmet'
 import MediaQuery from 'react-responsive'
 
 const servicesItems = ['Art Direction', 'Branding', 'Brand Strategy', 'Illustration', 'Print Design', 'Social Media', 'Website Build', 'Website Design'];
-const quoteSource = ['QUOTE SOURCE NEEDED'];
-const quoteText = ['Maecenas pulvinlvinarit vel dignissim pulvinar. Vivamus ut fermentum nulla, sit amet pharetra felis. Praesent imperdiet id odio nec euismod. Maecenas pulvinlvinarit vel dignissim pulvinar. Vivamus ut fermentum nulla, sit amet pharetra felis. Praesent imperdiet id odio nec euismod'];
+const quoteSource = ['Nicholas Douglas, MD, Notion'];
+const quoteText = ['Working with Back To Front has really helped us understand and develop our brand identity, website and full digital potential more than any previous web development agencies we\'d previously worked with. After our relaunch we doubled our digital readership in under a year. Its no coincidence this is partly due to Back To Front\'s knowledge and creativity within the world of the web.'];
 
 
 const ProjectNotion = ( { data } ) => (
