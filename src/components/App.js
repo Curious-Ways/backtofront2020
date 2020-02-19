@@ -6,15 +6,15 @@
  */
 
 import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-import SiteHeader from "./SiteHeader"
-import SiteFooter from "./SiteFooter"
 import "../fonts/fonts.css"
 import styled, { keyframes }  from 'styled-components'
 import { ThemeProvider } from "styled-components"
 import { GlobalStyles } from '../global';
 import { theme } from '../theme';
+import PropTypes from "prop-types"
+import { useStaticQuery, graphql } from "gatsby"
+import SiteHeader from "./SiteHeader"
+import SiteFooter from "./SiteFooter"
 
 const fadeIn = keyframes`
   from { 
