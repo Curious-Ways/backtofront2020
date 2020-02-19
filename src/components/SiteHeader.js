@@ -14,7 +14,7 @@ const fadeIn = keyframes`
   }
 `
 const Header = styled.header`
-  animation: ${fadeIn} 2s;
+  /* animation: ${fadeIn} 2s; */
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
