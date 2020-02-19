@@ -15,8 +15,6 @@ const CardWrapper = styled.div`
 `
 const CardTextWrap = styled.div`
 
-
-
   @media screen and (min-width: 900px) {
     position: absolute;
     bottom: 15px;

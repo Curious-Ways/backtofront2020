@@ -4,6 +4,11 @@ import styled from 'styled-components'
 
 const ContentWrapper = styled.div`
   max-width: 450px;
+  margin-bottom: 40px;
+
+  @supports (display: grid) {
+    margin-bottom: 0;
+  }
 
   @media screen and (max-width: 767px) {
     font-size: 18px;
