@@ -4,7 +4,7 @@ module.exports = {
     titleTemplate: "%s · Back to Front",
     description: "We design brands and we build websites for brand-new businesses, or businesses trying something brand-new",
     url: "https://backtofront.co",
-    image: "/static/c52374acb7cf4ee06b3f68f4c378dad5/86418/project-zenden.webp",
+    image: "/static/b2fsocial.jpg",
     twitterUsername: "@btfcollective",
   },
   plugins: [
