@@ -9,6 +9,7 @@ import ProjectText from "../../components/ProjectText"
 import ServicesList from "../../components/ServicesList"
 import Quote from "../../components/Quote"
 import Pagination from "../../components/Pagination"
+import VideoPop from "../../components/VideoPop"
 import Helmet from 'react-helmet'
 import MediaQuery from 'react-responsive'
 
@@ -62,10 +63,12 @@ const ProjectZenden = ( { data } ) => (
         fluid={data.imgZenden3.childImageSharp.fluid}
         alt="Zenden"
       />
-      <Img
-        fluid={data.imgZenden4.childImageSharp.fluid}
-        alt="Zenden"
-      />
+      <VideoPop>
+        <Img
+          fluid={data.imgZenden4.childImageSharp.fluid}
+          alt="Zenden"
+        />
+      </VideoPop>
       <Img
         fluid={data.imgZenden5.childImageSharp.fluid}
         alt="Zenden"
