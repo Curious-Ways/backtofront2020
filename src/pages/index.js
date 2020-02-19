@@ -8,6 +8,7 @@ import Img from "gatsby-image"
 import styled from 'styled-components'
 import Heading from "../components/Heading"
 import Helmet from 'react-helmet'
+import { Link } from "gatsby"
 
 const ProjectsGroup = styled.div`
   display: grid;
@@ -16,6 +17,17 @@ const ProjectsGroup = styled.div`
 `
 const ProjectsGroupTitle = styled(Heading)`
   padding-top: 20px;
+`
+
+const AboutLink = styled(Link)`
+  &:link, &:visited {
+    color: #fff;
+    padding-bottom: 1px;
+    border-bottom: 2px solid ${({ theme }) => theme.colorLightBlue};
+  }
+  &:hover, &:active, &:focus {
+    color: ${({ theme }) => theme.colorLightBlue};
+  }
 `
 
 const IndexPage = (  { data } ) => (
@@ -31,7 +43,7 @@ const IndexPage = (  { data } ) => (
         text="We design brands and we build websites for brand-new businesses, or businesses trying something brand-new."
         tag="h1"
       />
-      <p>Our people are the very best at what they do, but our services are surprisingly affordable because of how we choose to work.</p>
+      <p>Our people are the very best at what they do, but our services are surprisingly affordable because of <AboutLink to="/about/">how we choose to work</AboutLink>.</p>
       <p>We love what we do and are proud of our long term relationships; we continue to partner with all of the clients shown here.</p>
     </ContentBlockAnimated>
 

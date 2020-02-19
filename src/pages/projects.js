@@ -79,6 +79,38 @@ const ProjectsPage = ( { data } ) => (
           alt="Notion"
         />
       </Card>
+
+      <Card
+        text="We earned the trust to do Rosetta’s first rebrand after 25 years"
+        link="/projects/rosetta-arts"
+        >
+        <Img
+          fluid={data.imgRosetta.childImageSharp.fluid}
+          alt="Rosetta Arts"
+        />
+      </Card>
+
+      <Card
+        text="Fusce imperdiet odio faucibus ullamcorper tristique. Phasellus suscipit justo a feugiat aliquam"
+        link="/projects/van"
+        >
+        <Img
+          fluid={data.imgVan.childImageSharp.fluid}
+          alt="Van"
+        />
+      </Card>
+
+
+      <Card
+        text="A magazine that’s also a bookmark that grew from a side-project to a company backed by Margaret Atwood"
+        link="/projects/dog-ear"
+        >
+        <Img
+          fluid={data.imgDogEar.childImageSharp.fluid}
+          alt="Dog Ear"
+        />
+      </Card>
+
     </ProjectsWrap>
 
   </Layout>
@@ -113,7 +145,28 @@ export const query = graphql`
           ...GatsbyImageSharpFluid_withWebp
         }
       }
-    },    
+    },
+    imgDogEar: file(relativePath: { eq: "projects/project_thumbnail_dogear.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 535, quality: 90) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    },
+    imgVan: file(relativePath: { eq: "projects/project_thumbnail_van.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 535, quality: 90) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    },
+    imgRosetta: file(relativePath: { eq: "projects/project_thumbnail_rosetta.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 535, quality: 90) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    },
   } 
   
 `

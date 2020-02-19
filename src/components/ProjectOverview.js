@@ -13,10 +13,10 @@ const ContentWrapper = styled.div`
   a:link, a:visited {
     color: #fff;
     padding-bottom: 1px;
-    border-bottom: 2px solid #1DD5E1;   
+    border-bottom: 2px solid ${({ theme }) => theme.colorLightBlue};
   }
   a:hover, a:active, a:focus {
-    color: #1DD5E1;
+    color: ${({ theme }) => theme.colorLightBlue};
   }  
 `
 const StyledLink = styled.a`

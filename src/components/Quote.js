@@ -19,7 +19,7 @@ const QuoteText = styled.p`
 
   @media screen and (min-width: 768px) {
     &:before {
-      color: #1DD5E1;
+      color: ${({ theme }) => theme.colorLightBlue};
       content: "“";
       position: absolute;
       left: -35px;
