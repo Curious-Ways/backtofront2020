@@ -3,7 +3,6 @@ import Heading from "../components/Heading"
 import styled from 'styled-components'
 
 const ContentWrapper = styled.div`
-  margin-bottom: 60px;
   max-width: 450px;
 
   @media screen and (max-width: 767px) {

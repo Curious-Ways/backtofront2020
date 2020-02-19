@@ -5,13 +5,14 @@ const ListWrapper = styled.ul`
   list-style: none;
   margin-bottom: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: 40% auto;
-  grid-gap: 2px 10px;
-  align-items: start;
 
-  li {
-    align-self: start;
+  @media screen and (min-width: 400px) {
+    columns: 80px 2;
+    column-gap: 0;   
+  }
+
+  @media screen and (min-width: 768px) {
+    column-gap: 30px;    
   }
 `
 

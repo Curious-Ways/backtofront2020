@@ -3,6 +3,8 @@ import styled from 'styled-components'
 
 const ContentWrapper = styled.div`
 
+  margin-bottom: 60px;
+
   @media screen and (max-width: 767px) {
     margin-top: 40px;
   }
