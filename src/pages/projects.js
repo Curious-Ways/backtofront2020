@@ -19,7 +19,7 @@ const ProjectsWrap = styled.div`
   }
 `
 
-const RelationshipsPage = ( { data } ) => (
+const ProjectsPage = ( { data } ) => (
   <Layout>
 
     <Helmet htmlAttributes={{class: 'page-relationships'}}/>
@@ -118,4 +118,4 @@ export const query = graphql`
   
 `
 
-export default RelationshipsPage
+export default ProjectsPage

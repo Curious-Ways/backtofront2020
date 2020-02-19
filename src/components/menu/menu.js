@@ -10,7 +10,7 @@ const Menu = ({ open }) => {
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about/">About</Link></li>
-          <li><Link to="/relationships/">Projects</Link></li>
+          <li><Link to="/projects/">Projects</Link></li>
           <li><a href="tel:+4407870583147">Call us</a></li>
           <li><a href="mailto:hello@backtofront.co">Email us</a></li>
         </ul>
