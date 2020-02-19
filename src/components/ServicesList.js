@@ -8,6 +8,11 @@ const ListWrapper = styled.ul`
   display: grid;
   grid-template-columns: 40% auto;
   grid-gap: 2px 10px;
+  align-items: start;
+
+  li {
+    align-self: start;
+  }
 `
 
 const ServicesList = ({ list }) => (

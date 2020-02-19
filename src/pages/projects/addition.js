@@ -22,7 +22,10 @@ const ProjectAddition = ( { data } ) => (
 
     <Helmet htmlAttributes={{class: 'project-addition'}}/>
 
-    <SEO title="Addition" />
+    <SEO 
+      title="Addition"
+      description=""
+    />
 
     <ProjectText>
 

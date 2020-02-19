@@ -12,7 +12,10 @@ const AboutPage = ( { data } ) => (
 
     <Helmet htmlAttributes={{class: 'page-about'}}/>
 
-    <SEO title="Some ongoing relationships" />
+    <SEO 
+      title="About"
+      description=""
+    />
 
     <ContentBlock>
     

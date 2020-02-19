@@ -22,7 +22,10 @@ const ProjectVan = ( { data } ) => (
 
     <Helmet htmlAttributes={{class: 'project-van'}}/>  
 
-    <SEO title="Van" />
+    <SEO 
+      title="Van"
+      description=""
+    />
 
     <ProjectText>
 

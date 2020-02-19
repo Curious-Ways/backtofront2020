@@ -23,7 +23,10 @@ const ProjectNotion = ( { data } ) => (
 
     <Helmet htmlAttributes={{class: 'project-notion'}}/>
 
-    <SEO title="Notion" />
+    <SEO 
+      title="Notion"
+      description=""
+    />
 
     <ProjectText>
 

@@ -22,7 +22,11 @@ const ProjectDogEar = ( { data } ) => (
     
     <Helmet htmlAttributes={{class: 'project-dog-ear'}}/>
 
-    <SEO title="Dog Ear Magazine" />
+
+    <SEO 
+      title="Dog Ear Magazine"
+      description=""
+    />
 
     <ProjectText>
 

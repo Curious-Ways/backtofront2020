@@ -36,7 +36,10 @@ const IndexPage = (  { data } ) => (
 
     <Helmet htmlAttributes={{class: 'page-home'}}/>
 
-    <SEO title="Home" />
+    <SEO 
+      title="We design brands and we build websites"
+      description="We design brands and we build websites for brand-new businesses, or businesses trying something brand-new"
+    />
 
     <ContentBlockAnimated>
       <Heading

@@ -24,7 +24,10 @@ const ProjectsPage = ( { data } ) => (
 
     <Helmet htmlAttributes={{class: 'page-relationships'}}/>
 
-    <SEO title="Some ongoing relationships" />
+    <SEO 
+      title="Projects"
+      description=""
+    />
 
     <ContentBlock>
 
@@ -99,7 +102,6 @@ const ProjectsPage = ( { data } ) => (
           alt="Van"
         />
       </Card>
-
 
       <Card
         text="A magazine that’s also a bookmark that grew from a side-project to a company backed by Margaret Atwood"

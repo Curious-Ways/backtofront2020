@@ -23,7 +23,10 @@ const ProjectRosetta = ( { data } ) => (
 
     <Helmet htmlAttributes={{class: 'project-rosetta'}}/>
 
-    <SEO title="Rosetta" />
+    <SEO 
+      title="Rosetta Arts"
+      description=""
+    />
 
     <ProjectText>
 

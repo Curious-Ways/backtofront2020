@@ -22,7 +22,10 @@ const ProjectPishedFish = ( { data } ) => (
 
     <Helmet htmlAttributes={{class: 'project-pished-fish'}}/>
 
-    <SEO title="Pished Fish" />
+    <SEO 
+      title="Pished Fish"
+      description=""
+    />
 
     <ProjectText>
 
