@@ -2,7 +2,6 @@ import React from "react"
 import styled, { keyframes }  from 'styled-components'
 import animation from '../images/logo_animation.gif'
 import video from '../images/logo_animation.mp4'
-import MediaQuery from 'react-responsive'
 
 const fadeIn = keyframes`
   from { 
@@ -12,7 +11,6 @@ const fadeIn = keyframes`
     opacity: 1; 
   }
 `
-
 const ContentWrapper = styled.div`
   /* background-image: url(${animation});
   background-repeat: no-repeat;
@@ -39,10 +37,10 @@ const Content = styled.div`
   }  
 `
 const VideoLoop = styled.div`
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   @media screen and (min-width: 880px) {
     right: 0;
@@ -52,27 +50,27 @@ const VideoLoop = styled.div`
     animation: 0.5s ease-in 1.2s forwards ${fadeIn};
     opacity: 0;
   }
+
+  video {
+    @media screen and (max-width: 449px) {
+      width: 350px
+    }
+
+    @media screen and (min-width: 449px) {
+      width: 450px
+    }
+  }
 `
 
 const ContentBlockAnimated = props => (
 
     <ContentWrapper>
 
-      <MediaQuery maxWidth={449}>
-        <VideoLoop>
-          <video aautoPlay={true} muted width="350px">
-            <source type="video/mp4" src={video} />
-          </video>
-        </VideoLoop>
-      </MediaQuery>
-
-      <MediaQuery minWidth={450}>
-        <VideoLoop>
-          <video autoPlay={true} muted width="450px">
-            <source type="video/mp4" src={video} />
-          </video>
-        </VideoLoop>
-      </MediaQuery>
+      <VideoLoop>
+        <video aautoPlay={true} muted>
+          <source type="video/mp4" src={video} />
+        </video>
+      </VideoLoop>
 
       <Content>
         {props.children}

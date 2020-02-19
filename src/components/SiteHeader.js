@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from "gatsby"
-import styled, { keyframes }  from 'styled-components'
+import styled from 'styled-components'
 import MediaQuery from 'react-responsive'
 import Burger from './burger';
 import Menu from './menu';
