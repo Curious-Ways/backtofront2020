@@ -67,7 +67,7 @@ const SiteFooter = props => (
     </ContactsGroup>
 
     <Legal>
-      © {new Date().getFullYear()} Back to Front London Limited Company Number 10026593. Registered in England and Wales
+      © {new Date().getFullYear()} Back to Front London Limited Company Number 10026593 Registered in England and Wales
     </Legal>
 
   </FooterWrapper>
