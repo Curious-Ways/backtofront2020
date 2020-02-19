@@ -36,12 +36,6 @@ function SEO({ description, lang, meta, title }) {
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
-          "@context": "https://schema.org",
-          "@type": "Company",
-          "url": "http://backtofront.co",
-          "name": "Back to Front",
-        },
-        {
           name: `description`,
           content: metaDescription,
         },
