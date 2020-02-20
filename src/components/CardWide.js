@@ -14,6 +14,9 @@ const CardWrapper = styled.div`
   }
 `
 const CardTextWrap = styled.div`
+  @media screen and (max-width: 899px) {
+    padding: 30px 0;
+  }
 
   @media screen and (min-width: 900px) {
     position: absolute;
@@ -23,9 +26,10 @@ const CardTextWrap = styled.div`
   }
 `
 const CardText = styled.p`
+  margin-bottom: 0;
+
   @media screen and (max-width: 899px) {
     font-size: 18px;
-    padding: 30px 0;
     line-height: 1.5;
   }
 
@@ -50,6 +54,13 @@ const ImageWrap = styled.div`
     margin-right: calc(50% - 50vw);
   }
 `
+const ViewProject = styled(CardText) `
+  @media screen and (min-width: 900px) {
+    padding: 0px 8px;
+    margin-top: 2px;
+    display: inline-block;
+  }
+`
 
 const CardWide = props => (
 
@@ -59,7 +70,8 @@ const CardWide = props => (
         {props.children}
       </ImageWrap>
       <CardTextWrap>
-        <CardText>{props.text}</CardText>
+        <CardText>{props.text}</CardText><br />
+        <ViewProject>View Project &rarr;</ViewProject>
       </CardTextWrap>
     </Link>
   </CardWrapper>
