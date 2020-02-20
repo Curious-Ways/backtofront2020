@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/App"
 import SEO from "../components/seo"
-import ContentBlockAnimated from "../components/ContentBlockAnimated"
+import ContentBlockStatic from "../components/ContentBlockStatic"
 import CardWide from "../components/CardWide"
 import { graphql } from "gatsby" 
 import Img from "gatsby-image" 
@@ -41,14 +41,14 @@ const IndexPage = (  { data } ) => (
       description="We design brands and we build websites for brand-new businesses, or businesses trying something brand-new"
     />
 
-    <ContentBlockAnimated>
+    <ContentBlockStatic>
       <Heading
         text="We design brands and we build websites for brand-new businesses, or businesses trying something brand-new."
         tag="h1"
       />
       <p>Our people are the very best at what they do, but our services are surprisingly affordable because of <AboutLink to="/about/">how we choose to work</AboutLink>.</p>
       <p>We love what we do and are proud of our long term relationships; we continue to partner with all of the clients shown here.</p>
-    </ContentBlockAnimated>
+    </ContentBlockStatic>
 
     <ProjectsGroupTitle
       text="How our work works"
