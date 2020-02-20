@@ -25,14 +25,14 @@ const ProjectZenden = ( { data } ) => (
 
     <SEO 
       title="Zenden"
-      description=""
+      description="We partnered with a New York mortgage disruptor to go from MVP to market within ten weeks"
     />
 
     <ProjectText>
 
       <ProjectOverview
         title="Zenden"
-        text="TEXT NEEDED"
+        text="We partnered with a New York mortgage disruptor to go from MVP to market within ten weeks"
         linkName="usezenden.com"
         linkURL="https://usezenden.com"
         >
