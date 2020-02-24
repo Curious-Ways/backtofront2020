@@ -2,41 +2,56 @@ import React from "react"
 import styled from 'styled-components'
 import { Link } from "gatsby"
 
-const CardWrapper = styled.div`
-  a:link, a:visited {
-    color: #fff;
-  }
-  a:hover, a:active, a:focus {
 
-  }  
-`
-const CardText = styled.p`
+const CardTextWrap = styled.div`
   padding: 30px 40px 50px 0;
 
   @media screen and (max-width: 767px) {
-    font-size: 18px;
     padding: 30px 0;
+  }
+`
+const CardText = styled.p`
+
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
     line-height: 1.5;
   }
 `
-
 const ImageWrap = styled.div`
   @media screen and (max-width: 767px) {
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
   }
 `
+const CardLink = styled(Link) `
+  &:link, &:visited {
+    color: #fff;
+  }
+  &:hover, &:active, &:focus {
+    color: ${({ theme }) => theme.colorLightBlue};
+  }
 
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+  }
+`
 const Card = props => (
 
-  <CardWrapper>
+  <div>
     <Link to={props.link}>
       <ImageWrap>
         {props.children}
       </ImageWrap>
-      <CardText>{props.text}</CardText>
     </Link>
-  </CardWrapper>
+    
+    <CardTextWrap>
+      <CardText>
+        {props.text}  
+      </CardText>
+      <CardLink to={props.link}>View Project &rarr;</CardLink>
+    </CardTextWrap>
+    
+  </div>
 
 )
 
