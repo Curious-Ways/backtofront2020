@@ -8,7 +8,7 @@ const VideoWrap = styled.div `
   height: 0;
   overflow: hidden;
   max-width: 100%;
-
+  
   iframe,
   object,
   embed {
