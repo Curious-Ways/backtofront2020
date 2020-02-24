@@ -1,5 +1,6 @@
 import React from "react"
 import styled from 'styled-components'
+import Heading from "./Heading";
 
 const ListWrapper = styled.ul`
   list-style: none;
@@ -16,12 +17,24 @@ const ListWrapper = styled.ul`
   }
 `
 
+const WhatWeDid = styled(Heading) `
+  margin-top: 30px;
+`
+
 const ServicesList = ({ list }) => (
-  <ListWrapper>
-    {list.map(item => (
-      <li key={item}>{item}</li>
-    ))}
-  </ListWrapper>
+
+  <>
+    <WhatWeDid
+      text="What we did"
+      tag="h2"
+    />
+
+    <ListWrapper>
+      {list.map(item => (
+        <li key={item}>{item}</li>
+      ))}
+    </ListWrapper>
+  </>
 );
 
 export default ServicesList
