@@ -20,7 +20,9 @@ const ContentWrapper = styled.div`
   position: relative;
 
   @media screen and (min-width: 768px) {
-    max-width: 765px;
+    /* max-width: 765px; */
+    max-width: 100%;
+    background: yellow;
   }
 `
 const Content = styled.div`
@@ -44,10 +46,6 @@ const StaticBackground = styled.div`
   transform: translate(-50%, -50%);
 
   @media screen and (min-width: 880px) {
-    right: 0;
-    top: 0;
-    transform: none;
-    /* @keyframes duration | timing-function | delay | iteration-count | direction | fill-mode | play-state | name */
     animation: 0.5s ease-in 1.2s forwards ${fadeIn};
     opacity: 0;
   }
