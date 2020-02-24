@@ -22,7 +22,6 @@ const ContentWrapper = styled.div`
   @media screen and (min-width: 768px) {
     /* max-width: 765px; */
     max-width: 100%;
-    background: yellow;
   }
 `
 const Content = styled.div`
