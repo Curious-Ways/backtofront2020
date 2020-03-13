@@ -24,14 +24,14 @@ const ProjectVan = ( { data } ) => (
 
     <SEO 
       title="Van"
-      description=""
+      description="We brought to life a clients creative vision to launch a brand new product into the luxury jewellery market"
     />
 
     <ProjectText>
 
       <ProjectOverview
         title="Van"
-        text="Fusce imperdiet odio faucibus ullamcorper tristique. Phasellus suscipit justo a feugiat aliquam."
+        text="We brought to life a creative vision to launch a brand new product into the luxury jewellery market."
         linkName="van-robot.com"
         linkURL="https://van-robot.org"
         >
