@@ -42,16 +42,16 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
   body {
-    .page-home & {
+    /*.page-home & {
       background-repeat: repeat-x;
-      background-position: 0 400px;
+      background-position: 0 bottom;
       background-image: url(${background_pattern_small});
 
       @media screen and (min-width: 1000px) {
-        background-position: 0 700px;
+        background-position: 0 bottom;
         background-image: url(${background_pattern});
       }
-    }
+    } */
     color: #fff;
     min-height: 100vh;
     height: 100%;

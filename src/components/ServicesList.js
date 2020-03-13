@@ -21,11 +21,11 @@ const WhatWeDid = styled(Heading) `
   margin-top: 30px;
 `
 
-const ServicesList = ({ list }) => (
+const ServicesList = ({ list, title }) => (
 
   <>
     <WhatWeDid
-      text="What we did"
+      text={title || "What we did"}
       tag="h2"
     />
 
