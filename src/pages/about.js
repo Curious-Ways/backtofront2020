@@ -57,6 +57,7 @@ const Caption = styled.small `
     position: absolute;
     top: -3px;
     right: -14px;
+    color: ${({ theme }) => theme.colorLightBlue};
   }
 `
 
@@ -97,7 +98,7 @@ const AboutPage = ( { data } ) => (
           alt="Pete Lewis, Back to Front Co-founder"
         />
         <CaptionWrapper>
-          <Caption>This is Pete <span>&uarr;</span></Caption>
+          <Caption>And this is Pete <span>&uarr;</span></Caption>
         </CaptionWrapper>
       </Pete>
     </HeadshotsWrapper>
