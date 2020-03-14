@@ -66,7 +66,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   a:link, a:visited {
     text-decoration: none;
-    transition: 0.3s color ease-in-out;
+    transition: 0.3s all ease-in-out;
   }
   p {
     margin-top: 0;
