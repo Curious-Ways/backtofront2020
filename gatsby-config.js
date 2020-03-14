@@ -7,7 +7,7 @@ module.exports = {
       "We design brands and we build websites for brand-new businesses, or businesses trying something brand-new",
     url: "https://backtofront.co", // No trailing slash allowed!
     siteUrl: "https://backtofront.co",
-    image: "/images/b2fsocial.jpg", // Path to your image you placed in the 'static' folder
+    image: "https://dogearmagazine.com/b2fsocial.jpg", // Path to your image you placed in the 'static' folder
     twitterUsername: "@b2fdesign",
   },
   plugins: [
