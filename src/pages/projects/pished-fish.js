@@ -24,7 +24,7 @@ const ProjectPishedFish = ( { data } ) => (
 
     <SEO 
       title="Pished Fish"
-      description=""
+      description="We partnered to turn a garden shed hobby into a company that now graces the shelves of Harrods, Selfridges & Waitrose"
     />
 
     <ProjectText>

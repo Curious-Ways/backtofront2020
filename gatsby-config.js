@@ -1,12 +1,13 @@
 module.exports = {
+
   siteMetadata: {
     title: `Back to Front`,
-    titleTemplate: `%s · Back to Front`,
+    author: `Back to Front`,
     description: `We design brands and we build websites for brand-new businesses, or businesses trying something brand-new`,
-    url: `https://backtofront.co`,
     siteUrl: `https://backtofront.co`,
-    image: `/images/b2fsocial.jpg`,
-    twitterUsername: `@b2fdesign`,
+    social: {
+      twitter: `b2fdesign`,
+    },
   },
   plugins: [
     {
@@ -14,6 +15,13 @@ module.exports = {
       options: {
         // Add any options here
       },
+    },
+    {
+      resolve: `gatsby-plugin-social-banners`,
+      options: {
+        outputImg: 'b2fsocial.jpg',
+        baseImg: path.resolve('./src/static/b2fsocial.jpg')
+      }
     },
     `gatsby-plugin-react-helmet`,
     {

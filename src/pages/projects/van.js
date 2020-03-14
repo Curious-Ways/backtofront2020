@@ -31,7 +31,7 @@ const ProjectVan = ( { data } ) => (
 
       <ProjectOverview
         title="Van"
-        text="We brought to life a creative vision to launch a brand new product into the luxury jewellery market."
+        text="We brought to life a clients creative vision to launch a brand new product into the luxury jewellery market."
         linkName="van-robot.com"
         linkURL="https://van-robot.org"
         >

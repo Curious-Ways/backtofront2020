@@ -25,7 +25,7 @@ const ProjectDogEar = ( { data } ) => (
 
     <SEO 
       title="Dog Ear Magazine"
-      description=""
+      description="A magazine that’s also a bookmark that grew from a side-project to a company backed by Margaret Atwood"
     />
 
     <ProjectText>

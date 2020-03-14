@@ -25,7 +25,7 @@ const ProjectRosetta = ( { data } ) => (
 
     <SEO 
       title="Rosetta Arts"
-      description=""
+      description="We earned the trust to do Rosetta’s first rebrand after 25 years"
     />
 
     <ProjectText>

@@ -26,7 +26,7 @@ const ProjectsPage = ( { data } ) => (
 
     <SEO 
       title="Projects"
-      description=""
+      description="If you think we could help you, we would love to talk to you"
     />
 
     <ContentBlock>

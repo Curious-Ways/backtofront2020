@@ -38,10 +38,10 @@ const IndexPage = (  { data } ) => (
 
     <SEO 
       title="We design brands and we build websites"
-      description="We design brands and we build websites for brand-new businesses, or businesses trying something brand-new"
+      description="We hand-pick our team for your brief using our network of talented designers, developers, writers, animators and everything in between"
     />
 
-    <ContentBlockGif>
+    <ContentBlockGif> 
       <Heading
         text="We design brands and we build websites for brand-new businesses, or businesses trying something brand-new."
         tag="h1"

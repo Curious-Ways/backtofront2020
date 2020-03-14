@@ -24,7 +24,7 @@ const ProjectAddition = ( { data } ) => (
 
     <SEO 
       title="Addition"
-      description=""
+      description="We renamed, branded and launched an online accountancy firm in only eight weeks"
     />
 
     <ProjectText>

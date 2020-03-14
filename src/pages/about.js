@@ -68,7 +68,7 @@ const AboutPage = ( { data } ) => (
 
     <SEO 
       title="About"
-      description=""
+      description="We have collective experience of 30 years working with clients including Sony, Nokia, Cadburys, BBC, ITV, British Red Cross and the Tate"
     />
 
     <Heading

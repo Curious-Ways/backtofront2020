@@ -25,7 +25,7 @@ const ProjectNotion = ( { data } ) => (
 
     <SEO 
       title="Notion"
-      description=""
+      description="We re-launched Notion’s digitial offerings. Helping to double their online readership in less than a year"
     />
 
     <ProjectText>
