@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: "Back to Front",
-    titleTemplate: "%s · Back to Front",
-    description: "We design brands and we build websites for brand-new businesses, or businesses trying something brand-new",
-    url: "https://backtofront.co",
-    image: "/static/b2fsocial.jpg",
-    twitterUsername: "@btfcollective",
+    title: `Back to Front`,
+    titleTemplate: `%s · Back to Front`,
+    description: `We design brands and we build websites for brand-new businesses, or businesses trying something brand-new`,
+    url: `https://backtofront.co`,
+    siteUrl: `https://backtofront.co`,
+    image: `/images/b2fsocial.jpg`,
+    twitterUsername: `@b2fdesign`,
   },
   plugins: [
     {
