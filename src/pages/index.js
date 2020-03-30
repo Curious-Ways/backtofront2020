@@ -43,39 +43,7 @@ const IndexPage = (  { data } ) => (
 
     <ContentBlock center> 
 
-      <Heading
-        text="Fresh from working at top agencies across big and small brands, we built Back to Front to do things differently - build a remote team of highly creative people that collaborate on projects to deliver a whole creative package woven through from concept to audience"
-        tag="h1"
-      />
-
-      <Heading
-        text="How we do it"
-        tag="h2"
-      />
-
-      <p>Design quality branding that tells a fluid and coherent narrative online and off</p>
-      <p>Create coherent tools to help you deliver a whole creative package woven through from concept to audience</p>
-      <p>Maintain relationships with our clients and continue to help them grow</p>
-      <p>Provide innovative ways of working remotely, virtually and in person</p>
-
-      <p>Read more about <AboutLink to="/about/">how we choose to work</AboutLink></p>
-
-      <p>Get in touch to talk about your project</p>
-    
     </ContentBlock>
-
-    <Heading
-      text="Some clients"
-      tag="h2"
-    />
-
-    ITV
-    Garden Museum
-    BBC
-    Donald Insall
-    Engenutii
-    Hal Leonard Europe
-    Sophie Dahl
     
 
 
