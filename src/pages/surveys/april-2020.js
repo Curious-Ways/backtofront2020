@@ -27,8 +27,8 @@ const IndexPage = (  { data } ) => (
     <Helmet htmlAttributes={{class: 'page-survey'}}/>
 
     <SEO
-      title="We design brands and we build websites"
-      description="We hand-pick our team for your brief using our network of talented designers, developers, writers, animators and everything in between"
+      title="Survey"
+      description=""
     />
 
     <ContentBlock wide>
