@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/App"
 import SEO from "../components/seo"
-import ContentBlockGif from "../components/ContentBlockGif"
+import ContentBlock from "../components/ContentBlock"
 import CardWide from "../components/CardWide"
 import { graphql } from "gatsby" 
 import Img from "gatsby-image" 
@@ -41,17 +41,46 @@ const IndexPage = (  { data } ) => (
       description="We hand-pick our team for your brief using our network of talented designers, developers, writers, animators and everything in between"
     />
 
-    <ContentBlockGif> 
+    <ContentBlock center> 
+
       <Heading
-        text="We design brands and we build websites for brand-new businesses, or businesses trying something brand-new."
+        text="Fresh from working at top agencies across big and small brands, we built Back to Front to do things differently - build a remote team of highly creative people that collaborate on projects to deliver a whole creative package woven through from concept to audience"
         tag="h1"
       />
-      <p>Our people are the very best at what they do, but our services are surprisingly affordable because of <AboutLink to="/about/">how we choose to work</AboutLink>.</p>
-      <p>We love what we do and are proud of our long term relationships; we continue to partner with all of the clients shown here.</p>
-    </ContentBlockGif>
+
+      <Heading
+        text="How we do it"
+        tag="h2"
+      />
+
+      <p>Design quality branding that tells a fluid and coherent narrative online and off</p>
+      <p>Create coherent tools to help you deliver a whole creative package woven through from concept to audience</p>
+      <p>Maintain relationships with our clients and continue to help them grow</p>
+      <p>Provide innovative ways of working remotely, virtually and in person</p>
+
+      <p>Read more about <AboutLink to="/about/">how we choose to work</AboutLink></p>
+
+      <p>Get in touch to talk about your project</p>
+    
+    </ContentBlock>
+
+    <Heading
+      text="Some clients"
+      tag="h2"
+    />
+
+    ITV
+    Garden Museum
+    BBC
+    Donald Insall
+    Engenutii
+    Hal Leonard Europe
+    Sophie Dahl
+    
+
 
     <ProjectsGroupTitle
-      text="How our work works"
+      text="Recent projects"
       tag="h1"
     />
 
