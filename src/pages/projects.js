@@ -94,7 +94,7 @@ const ProjectsPage = ( { data } ) => (
       </Card>
 
       <Card
-        text="Fusce imperdiet odio faucibus ullamcorper tristique. Phasellus suscipit justo a feugiat aliquam"
+        text="We brought to life a clients creative vision to launch a brand new product into the luxury jewellery market"
         link="/projects/van"
         >
         <Img
