@@ -14,7 +14,6 @@ import { theme } from '../theme';
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import SiteHeader from "./SiteHeader"
-import SiteFooter from "./SiteFooter"
 
 const fadeIn = keyframes`
   from { 
@@ -55,7 +54,6 @@ const Layout = ({ children }) => {
         <Site>
           <SiteHeader siteTitle={data.site.siteMetadata.title} />
           <Main>{children}</Main>
-          <SiteFooter />
         </Site>
       </>
     </ThemeProvider>

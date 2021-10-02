@@ -13,11 +13,7 @@ export const GlobalStyles = createGlobalStyle`
     background-blend-mode: color-burn;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: linear-gradient(180deg, #302AB8 0%, #302AB8 50%, #2AAAB2 100%);
-
-    @media screen and (min-width: 768px) {
-      background-image: linear-gradient(180deg, #302AB8 0%, #302AB8 35%, #2AAAB2 100%);
-    }
+    background-color: #2f2ab7;
     
     &.project-addition {
       background-image: linear-gradient(180deg, #302AB8 11%, #00DCA1 100%);
